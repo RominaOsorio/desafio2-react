@@ -1,7 +1,8 @@
 import SocialButtom from "./SocialButtom"
 import Formulario from "./Formulario";
+import Alert from "./Alert";
 
-const Registro = () => {
+const Registro = ({ alert, setAlert }) => {
   return (
     <>
       <div className="container border border-light-subtle rounded-5 bg-white p-5">
@@ -12,7 +13,8 @@ const Registro = () => {
           <SocialButtom icon="fa-brands fa-linkedin fa-3x"/>
         </div>
         <p>O usa tu email para registrarte</p>
-        <Formulario/>
+        <Formulario setAlert={setAlert}/>
+        {alert.msg !== "" && <Alert msg={alert.msg} color={alert.color} />}
       </div>
     </>
   )
