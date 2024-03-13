@@ -1,4 +1,5 @@
 import SocialButtom from "./SocialButtom"
+import Formulario from "./Formulario";
 
 const Registro = () => {
   return (
@@ -11,6 +12,7 @@ const Registro = () => {
           <SocialButtom icon="fa-brands fa-linkedin fa-3x"/>
         </div>
         <p>O usa tu email para registrarte</p>
+        <Formulario/>
       </div>
     </>
   )
