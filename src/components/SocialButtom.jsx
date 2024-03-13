@@ -1,7 +1,9 @@
-const SocialButtom = () => {
+const SocialButtom = ({icon}) => {
   return (
-    <div>SocialButtom</div>
-  )
-}
+    <div className="icon-container border border-black rounded-circle p-3">
+      <i className={icon}></i>
+    </div>
+  );
+};
 
-export default SocialButtom
+export default SocialButtom;
